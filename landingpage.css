@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Open+Sans|Gugi|Nunito');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/img/xqc9oN1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  display: table;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Gugi', sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+/* NAV */
+.nav {
+  transition: background-color 500ms, color 500ms;
+  transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out,
+    padding-bottom 0.3s;
+
+  background-color: #313131;
+  color: #fcfcfc;
+  transition: height 500ms;
+  height: 8%;
+}
+
+.navbar {
+  /*Quitar este elemento y en su lugar poner fixed-top para que el nav se quede ahi todo el tiempo.*/
+  position: absolute !important ;
+}
+
+.navbar img {
+  width: 9%;
+  float: left;
+}
+/* ..NAV */
+
+/* HOME */
+.home-wrapper {
+  color: #021741;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+}
+
+.home-wrapper h1 {
+  font-size: 750%;
+  text-transform: uppercase;
+}
+/* ..HOME */
+
+/* QUIENES SOMOS */
+.quienesSomos {
+  height: 75vh;
+  width: 100%;
+  background-size: cover;
+  background-color: rgb(236, 236, 236);
+  display: table;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.quienesSomos-wrapper {
+  margin-top: 7%;
+}
+
+.quienesSomos-wrapper .content {
+  	border-radius: 0px 40px 0px 40px;
+  	-moz-border-radius: 0px 40px 0px 40px;
+  	-webkit-border-radius: 0px 40px 0px 40px;
+  	border: 3px solid #fcfcfc;
+  	background-color: #fcfcfc;
+  	color: #0e0d0d;
+	
+	-webkit-box-shadow: inset 1px 9px 75px 9px rgba(2,23,65,0.49);
+	-moz-box-shadow: inset 1px 9px 75px 9px rgba(2,23,65,0.49);
+	box-shadow: inset 1px 9px 75px 9px rgba(2,23,65,0.49);
+}
+/* ..QUIENES SOMOS */ 
+
+/* MISIÓ N Y VISIÓN */
+.misionyvision {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-color: #f3eae1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.anchoMisionVision {
+  height: 50vh;
+}
+
+.misionyvision-bg-img {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('./assets/img/misionyvision.jpg');
+}
+
+.misionyvision .content {
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  background-color: #373e4ddc;
+  color: #fcfcfc;
+}
+/* ..MISIÓ N Y VISIÓN */
+
+/* NUESTROS PROYECTOS */
+.nuestrosproyectos {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-color: rgb(236, 236, 236);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.nuestrosproyectos_row_header {
+  height: 12.5vh;
+  font-family: 'Gugi', sans-serif;
+  text-align: center;
+}
+
+.nuestrosproyectos_row {
+  font-family: 'Nunito', 'sans-serif';
+  height: 25vh;
+}
+
+.nuestroproyectos_content{
+	background-color: #fcfcfc;
+	border-radius: 21px 21px 21px 21px;
+	-moz-border-radius: 21px 21px 21px 21px;
+	-webkit-border-radius: 21px 21px 21px 21px;
+	border: 7px double #9d8989;
+	
+	-webkit-box-shadow: 15px 27px 80px -3px rgba(0,0,0,0.29);
+	-moz-box-shadow: 15px 27px 80px -3px rgba(0,0,0,0.29);
+	box-shadow: 15px 27px 80px -3px rgba(0,0,0,0.29);
+}
+
+.nuestrosproyectos_row h4 {
+	text-align: center;
+}
+
+.nuestrosproyectos_row_footer {
+  height: 12.5vh;
+  margin-right: 0 !important;
+}
+
+.nuestrosproyectos_row_footer a {
+	text-decoration: none;
+	color: black;
+}
+
+.nuestrosproyectos_row_footer a:hover {
+	text-decoration: none;
+	color: black;
+}
+/* ..NUESTROS PROYECTOS */
+
+/* NUESTRO EQUIPO */
+.nuestroequipo {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-color: rgb(236, 236, 236);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nuestroequipo-bg-img {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('./assets/img/background3.jpg');
+}
+
+/*FIXME: Reparar el margin top.*/
+.nuestroequipo-wrapper {
+  position: sticky;
+}
+
+.nuestroequipo-wrapper h1 {
+  color: #fcfcfc;
+  font-family: 'Gugi', sans-serif;
+  text-align: center;
+}
+
+.team-img {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 11;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.nuestroequipo-wrapper img {
+  width: 90%;
+}
+/* ..NUESTRO EQUIPO */
+
+/* CONTACTENOS */
+.contactenos {
+	width: 100%;
+	height: 40vh;
+	background-size: cover;
+	background-color: rgb(236, 236, 236);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+}
+/* ..CONTACTENOS */
+
+
+/* FOOTER */
+footer {
+	width: 100%;
+	background-color: #33373e;
+	height: 40vh;
+}
+
+.footer-wrapper {
+	top: 5%;
+}
+
+.footer-content {
+	color: #fcfcfc;
+}
+/* ..FOOTER */
+
+/**
+Manejo de pantallas.
+*/
+@media only screen and (max-width: 833px) {
+  .navbar img {
+    width: 12%;
+    float: left;
+  }
+  .home-wrapper h1 {
+    font-size: 600%;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 583px) {
+  .navbar img {
+    width: 21%;
+    float: left;
+  }
+  .home-wrapper h1 {
+    font-size: 450%;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+	.navbar img {
+		width: 30%;
+		float: left;
+	}
+	
+	.home-wrapper h1 {
+		font-size: 300%;
+		text-transform: uppercase;
+	}
+	
+	.quienesSomos-wrapper .content h1 {
+		font-size: 200%;
+		
+	}
+	
+	.quienesSomos-wrapper .content {
+		font-size: 0.6em;
+		
+	}
+	
+}

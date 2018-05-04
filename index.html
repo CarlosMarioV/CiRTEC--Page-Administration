@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CiRTEC</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="./landingpage.css" />
+
+		<!-- Bootstrap 4 -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+			  crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+				crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+				crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+				crossorigin="anonymous"></script>
+		<!-- .Bootstrap 4 -->
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+			  crossorigin="anonymous">
+		<!-- .Font Awesome -->
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+				crossorigin="anonymous"></script>
+		<!-- .jQuery -->
+
+		<!-- Load JS Script-->
+		<script src="./assets/js/landingpage.js"></script>
+		<!-- .Load JS Script-->
+
+		<!-- Load angular@1.6.9 and uirouter/angularjs@1.0.15-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<!-- .Load angular@1.6.9 and uirouter/angularjs@1.0.15-->
+
+		<!-- Load controller-->
+		<script src="./Landing_page/Controller/landingPage.js"></script>
+		<!-- .Load controller-->
+
+	</head>
+
+	<body ng-app="CiRTEC" ng-controller="LandingPageCtrl as home">
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark indigo">
+			<div class="">
+				<!-- Navbar brand <a class="navbar-brand" href="#">Navbar</a> -->
+				<img src="./assets/img/logo oficial.png" alt="CiRTEC">
+				<!-- Collapse button -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+						aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Collapsible content -->
+				<div class="collapse navbar-collapse" id="basicExampleNav">
+					<div style="float: right;">
+						<!-- Links -->
+						<ul class="navbar-nav mr-auto" style="float: right;">
+							<li class="nav-item active">
+								<a class="nav-link" href="#portada">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#quienesSomos">Quines Somos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#misionyvision">Misión y Visión</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#nuestrosproyectos">Nuestros Proyectos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#nuestroequipo">Nuestros Equipo</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contactenos">Contáctenos</a>
+							</li>
+						</ul>
+						<!-- Links -->
+					</div>
+				</div>
+				<!-- Collapsible content -->
+
+			</div>
+		</nav>
+		<!--/.Navbar -->
+		<header>
+			<div class="portada" id="portada">
+				<div class="home-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10">
+								<h1>Bienvenido</h1>
+							</div>
+							<div class="col-md-10">
+								<h2>Comunidad Interdisiplinaria de Robotica </h2>
+							</div>
+							<div class="col-md-10">
+								<h4>Tecnológico de Costa Rica</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="quienesSomos" id="quienesSomos">
+				<div class="quienesSomos-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-9 col-md-7  center" style="margin-left: 20%;">
+								<div class="content">
+									<h1>¿Quienes Somos?</h1>
+									<br>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum nisi eget molestie
+										aliquet. Fusce elementum dapibus sapien vitae vulputate. Curabitur sit amet fermentum
+										lacus. Proin quis semper nisl, sit amet venenatis lectus. Sed lectus leo, luctus at arcu
+										condimentum, dignissim consequat nulla. Morbi id varius ante.</p>
+									<p>
+										Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse tempor, orci nec
+										sagittis facilisis, lectus nisl gravida dui, vitae aliquet nisl erat quis tortor. Duis
+										congue nisi vitae dui congue mollis. Proin ac felis nec velit cursus vestibulum non eu
+										purus. Maecenas placerat nibh vitae tellus fringilla, quis vehicula diam porta. Donec
+										aliquet elit nec diam blandit egestas. In convallis aliquam nunc vel consequat.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="misionyvision misionyvision-bg-img" id="misionyvision">
+				<div class="container">
+					<div class="row anchoMisionVision">
+						<div class="col-md-6 content">
+							<div class="center">
+								<br>
+								<br>
+								<h2>Misión</h2>
+								<p>
+									Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo
+									emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón
+									y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y
+									gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán.
+									El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que
+									pesó un kilo. El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío, añoraba
+									a su querido cachorro.
+								</p>
+							</div>
+
+						</div>
+						<div class="col-md-6"></div>
+					</div>
+
+					<div class="row anchoMisionVision">
+						<div class="col-md-6"></div>
+						<div class="col-md-6 content">
+							<div class="center">
+								<br>
+								<br>
+								<br>
+								<h2>Visión</h2>
+								<p>
+									El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja. Quiere la
+									boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza
+									al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada
+									vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto
+									baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas
+									y uñas de gavilán.
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="nuestrosproyectos" id="nuestrosproyectos">
+				<div class="container">
+					<div class="row nuestrosproyectos_row_header">
+						<div class="col-md-12">
+							<br>
+							<div class="center">
+								<h1>Nuestros Proyectos</h1>
+							</div>
+						</div>
+
+					</div>
+					<div class="row nuestrosproyectos_row">
+						<div class="col-md-3 nuestroproyectos_content">
+							<h4>Reconocimiento Facial</h4>
+							<p>
+								hdajshdkahsd khdjahsdk khsjdhaks jshdajkhh ahsdjs jhkdhas dhkjhk khdkashdk
+							</p>
+							<div class="center" >
+								<button type="button" class="btn btn-outline-secondary">Ver más</button>
+							</div>
+						</div>
+						<div class="col-md-3 offset-md-3 nuestroproyectos_content">
+							<h4>Vehiculo Autonomo</h4>
+							<p>
+								hdajshdkahsd khdjahsdk khsjdhaks jshdajkhh ahsdjs jhkdhas dhkjhk khdkashdk
+							</p>
+							<div class="center" >
+								<button type="button" class="btn btn-outline-secondary">Ver más</button>
+							</div>
+						</div>
+					</div>
+					<div class="row nuestrosproyectos_row">
+						<div class="col-md-3 offset-md-3 nuestroproyectos_content">
+							<h4>Robot autonomo</h4>
+							<p>
+								hdajshdkahsd khdjahsdk khsjdhaks jshdajkhh ahsdjs jhkdhas dhkjhk khdkashdk
+							</p>
+							<div class="center" >
+								<button type="button" class="btn btn-outline-secondary">Ver más</button>
+							</div>
+						</div>
+						<div class="col-md-3 offset-md-3 nuestroproyectos_content">
+							<h4>Machine Learning</h4>
+							<p>
+								hdajshdkahsd khdjahsdk khsjdhaks jshdajkhh ahsdjs jhkdhas dhkjhk khdkashdk
+							</p>
+							<div class="center" >
+								<button type="button" class="btn btn-outline-secondary">Ver más</button>
+							</div>
+						</div>
+					</div>
+					<div class="row nuestrosproyectos_row">
+						<div class="col-md-3 nuestroproyectos_content">
+							<h4>Matrial Didactico</h4>
+							<p>
+								hdajshdkahsd khdjahsdk khsjdhaks jshdajkhh ahsdjs jhkdhas dhkjhk khdkashdk
+							</p>
+							<div class="center" >
+								<button type="button" class="btn btn-outline-secondary">Ver más</button>
+							</div>
+						</div>
+						<div class="col-md-3 offset-md-3 nuestroproyectos_content">
+							<h4>Ejes de Investigación</h4>
+							<p>
+								hdajshdkahsd khdjahsdk khsjdhaks jshdajkhh ahsdjs jhkdhas dhkjhk khdkashdk
+							</p>
+							<div class="center" >
+								<button type="button" class="btn btn-outline-secondary">Ver más</button>
+							</div>
+						</div>
+					</div>
+					<div class="row nuestrosproyectos_row_footer">
+						
+						<div class="col-md-4 offset-md-8" >
+							<br>
+						<br>
+							<h3><a href="">Aún más proyectos</a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nuestroequipo nuestroequipo-bg-img" id="nuestroequipo">
+				<div class="nuestroequipo-wrapper">
+					<div class="container">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card">
+									<div class="team-img">
+										<img src="./assets/img/Felipe Gadea.jpg" class="img-responsive img-thumbnail" alt="Felpe Gadea">
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Felipe Gadea</h4>
+										<p class="card-text">Estudiante del Tecnológico de Costa Rica</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card">
+									<div class="team-img">
+										<img src="./assets/img/Jose Rosales.jpg" class="img-responsive img-thumbnail" alt="Jose Rosales">
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Jose Rosales</h4>
+										<p class="card-text">Estudiante del Tecnológico de Costa Rica</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card">
+									<div class="team-img">
+										<img src="./assets/img/Luis.jpeg" class="img-responsive img-thumbnail rounded" alt="Luis Miguel ">
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Luis Miguel</h4>
+										<p class="card-text">Profesor del Tecnológico de Costa Rica</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-4 offset-md-4">
+								<h1>Nuestro Equipo</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contactenos" id="contactenos" >
+				<div class="container">
+					<br/>
+					<div class="" >
+						<form action="" class="">
+							<div class="row">
+								<div class="col-md-3 offset-md-3 form-group">
+									<input  class="form-control" type="email" name="email" placeholder="Correo">
+								</div>
+								<div class="col-md-3 form-group" >
+									<input class="form-control" type="text" name="suject" placeholder="Sujeto">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 offset-md-3 form group" >
+									<textarea class="form-control" name="message" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
+								</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col-md-6 offset-md-3 center">
+									<button type="button" class="btn btn-outline-success">Enviar Mensaje</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<br>
+				<br>
+				<div class="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="center">
+									<img height="100" src="./assets/img/logo oficial.png" alt="">
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-3">
+							</div>
+							<div class="col-md-2">
+								<button type="button" class="btn btn-info">
+									<i class="fab fa-facebook"></i> | Facebook
+								</button>
+							</div>
+							<div class="col-md-2">
+								<button type="button" class="btn btn-info">
+									<i class="fab fa-instagram"></i> | instagram
+								</button>
+							</div>
+							<div class="col-md-2">
+								<button type="button" class="btn btn-info">
+									<i class="fab fa-linkedin-in"></i> | linkedIn
+								</button>
+							</div>
+						</div>
+						<div class="footer-content">
+							<p>Tecnológico de Costa Rica | 2018</p>
+							<p>Esteban Blanco | Carlos Villafuerte | Andrey Murillo</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</body>
+
+</html>

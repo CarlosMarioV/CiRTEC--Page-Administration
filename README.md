@@ -1,27 +1,56 @@
-# CiRTEC
+# Proyecto: CiRTEC
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
+## Introducción
 
-## Development server
+Este proyecto consta de una pequeña pagina web para la comunidad de robotica del Tecnologico de Costa Rica, se realizo para el curso de "Introducción al desarrollo de aplicaciones web" del 2018.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Notas:
 
-## Code scaffolding
+* Se usa angular@1.6.9 con el enrutador uirouter/angular@1.0.15
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para la primera entrega, el landing page estara en la pagina index.html y se referenciara a su controlador dentro de este mismo ya que para implementar las rutas en AngularJS con UI Router se necesita un servidor activo de lo contrario mandara un error y no mostrara la pagina.
 
-## Build
+Para las direcciones URL => https://ui-router.github.io/tutorials/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+```html
+<!DOCTYPE html>
+<html>
 
-## Running unit tests
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CiRTEC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="" />
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    <!-- Load angular@1.6.9 and uirouter/angularjs@1.0.15-->
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
 
-## Running end-to-end tests
+    <!-- Load routers -->
+    <script src="app.js"></script>
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    <!-- Load controller-->
+    <script src="./Landing_page/Controller/landingPage.js"></script>
 
-## Further help
+</head>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<body ng-app="CiRTEC">
+    <div>
+        <ui-view></ui-view>
+    </div>
+
+</body>
+
+</html>
+```
+
+## Parallax
+
+parallax simple puro:
+
+* https://www.youtube.com/watch?v=VPdiPff02Qg : Español
+* https://www.youtube.com/watch?v=vEdrNJHiXXY : --
+
+* https://www.youtube.com/watch?v=ZDcMe-uMAXI : con el nav solo arriba :: mbd
+* https://www.youtube.com/watch?v=LOWjWRy_Kks : con el nav trasnparente :: css
