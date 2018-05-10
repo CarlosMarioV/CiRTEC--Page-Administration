@@ -17,4 +17,11 @@ miapp.config(function($stateProvider, $urlRouterProvider) {
         controller: 'LoginCtrl',
         controllerAs: 'login'
   })
+  .state(
+    'projects', {
+    url: '/projects',
+    templateUrl: './projects/projects.html',
+    controller: 'ProjectsCtrl',
+    controllerAs: 'projects'
+})
 });
