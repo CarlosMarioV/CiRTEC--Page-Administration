@@ -1,0 +1,43 @@
+.fondo{
+    background-color: #f3f3f3;
+    height: 100%;
+}
+
+.logoLogin{
+    margin-top: 4%;
+}
+
+.contenedor{
+    background-color: #FFFFFF;
+    margin-bottom: 6%;
+}
+
+
+.inputLogin{
+    height: 50px;
+    margin-top: 2%;
+    background-color: #e1e1e1;
+}
+
+#primerInput{
+    margin-top: 10%;
+}
+
+::-webkit-input-placeholder { /* Safari y Chrome */
+    color: #0397d6;
+ }
+
+#botonLogin{
+    margin-top: 2%;
+    background-color: #2b5772;
+    height: 50px;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+#labelLogin{
+    margin-top: 2%;
+    text-align: center;
+    color: #0397d6;
+    margin-bottom: 5%;
+}

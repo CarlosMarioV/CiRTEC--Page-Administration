@@ -1,0 +1,36 @@
+.fondo{
+    background-color: #f3f3f3;
+    height: 100%;
+}
+
+.contenedor{
+    background-color: #FFFFFF;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+
+
+#tituloProyecto{
+    margin-top: 7%;
+    text-align: center;
+    color: #0397D6;
+    font-weight: bold;
+}
+
+#infoGeneral{
+    color: #0397D6;
+    margin-top: 2%;
+}
+
+#previewPDF{
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+#descripcionProyecto{
+    text-align: justify;
+    margin-top: 2%;
+}
+
+
