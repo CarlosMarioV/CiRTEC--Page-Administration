@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
 
 <head>
 	<meta charset="utf-8" />
@@ -31,27 +31,21 @@
 
 </head>
 
-<body ng-app="CiRTEC">
-	Hola, no estoy cargando angular js
-	<div ui-view> </div>
-	<ui-view></ui-view>
-	
-		<!-- Load JS Script-->
-	<script src="./assets/js/landingpage.js"></script>
-	<!-- .Load JS Script-->
+<body ng-app="cirtec">
+	<div ng-view></div>
 
-	<!-- Load angular@1.6.9 and uirouter/angularjs@1.0.15-->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js" ></script>
-	<!-- .Load angular@1.6.9 and uirouter/angularjs@1.0.15-->
+	<!-- Load angular@1.6.9 and uirouter/angularjs@1.0.15 -->
+	<script src="./node_modules/angular/angular.js"></script>
+	<script src="./node_modules/angular/angular-route.js"></script>
 
-	<!-- Load app -->
-	<script src="./app.js"></script>
-	<!-- Load app -->
-	
+	<!-- Load routers -->
+	<script type="text/javascript" src="./app.js"></script>
+
+	<script type="text/javascript" src="./request-service.js"></script>
+
 	<!-- Load controller-->
-	<script src="./Landing_page/Controller/landingPage.js"></script>
-	<!-- .Load controller-->
+	<script type="text/javascript" src="./Landing_page/Controller/landingPage.js"></script>
+	<script type="text/javascript" src="./login/Controlador/login.js"></script>
 </body>
 
 </html>

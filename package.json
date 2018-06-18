@@ -20,7 +20,11 @@
   "author": "Carlos Villafuerte, Esteban Blanco, Andrey Murillo.",
   "license": "ISC",
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.15",
-    "angular": "^1.6.9"
+    "@uirouter/angularjs": "1.0.5",
+    "angular": "1.6.5",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "hotnode": "0.0.8",
+    "http": "0.0.0"
   }
 }
