@@ -16,6 +16,11 @@ angular.module("cirtec", ["ngRoute"])
 					templateUrl: 'single-page/single-project.html',
 					controller: 'SinglePageCtrl as singlepage'
 				})
+			.when(
+				'/manage_projects', {
+					templateUrl: 'manage-projects/manage-projects.html',
+					controller: 'ManageProjectsCtrl as manageprojects'
+				})
 			.otherwise({
 				redirectTo: '/'
 			})

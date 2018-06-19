@@ -17,10 +17,16 @@ var app = angular.module("cirtec")
                 data: '',
                 params: "?username="+pUser.username+"&password="+pUser.password
             }, {
-                url: "localhost:8000/api/login"
+                url: "http://localhost:8000/api/login"
                 
             }).then(function (respuesta) {
                 console.log(respuesta);
+                if (Object.keys(respuesta).length === 0){
+                    alert("No se encontró el usuario")
+                }
+                else{
+                    window.location.href ="http://localhost:8081/#!/manage_projects"
+                }
             });
 
         }

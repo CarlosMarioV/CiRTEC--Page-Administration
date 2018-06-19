@@ -1,0 +1,64 @@
+<br>
+<div class="row clearfix">
+    <div class="col-md-12">
+        <div class="card">
+            <h5 class="card-header">Proyectos</h5>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Descripcion</th>
+                                    <th scope="col">Foto</th>
+                                    <th scope="col">Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-sm" ng-model="manageprojects.project.nombre" placeholder="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-sm" ng-model="manageprojects.project.descripcion" placeholder="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="file" multiple="false" accept="image/*" class="form-control form-control-sm" ng-model="manageprojects.project.foto" placeholder="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-success" ng-click="manageprojects.add(manageprojects.project)">Agregar</button>
+                                            <button type="button" class="btn btn-warning" ng-click="manageprojects.update(manageprojects.project)">Modificar</button>
+                                            <button type="button" class="btn btn-light" ng-click="manageprojects.clearV()">Limpiar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr ng-repeat="project in manageprojects.listaProyectos">
+                                    <td>{{project.id}}</td>
+                                    <td>{{project.nombre}}</td>
+                                    <td>{{project.descripcion}}</td>
+                                    <td>{{project.foto}}</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-danger" ng-click="manageprojects.delete(project.id)">Eliminar</button>
+                                            <button type="button" class="btn btn-secondary" ng-click="manageprojects.select(project)">Seleccionar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

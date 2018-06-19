@@ -279,21 +279,21 @@
                 <form action="" class="">
                     <div class="row">
                         <div class="col-md-3 offset-md-3 form-group">
-                            <input class="form-control" type="email" name="email" placeholder="Correo">
+                            <input class="form-control" ng-model="home.contactus.email" type="email" name="email" placeholder="Correo">
                         </div>
                         <div class="col-md-3 form-group">
-                            <input class="form-control" type="text" name="suject" placeholder="Sujeto">
+                            <input class="form-control" ng-model="home.contactus.subject" type="text" name="suject" placeholder="Sujeto">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 offset-md-3 form group">
-                            <textarea class="form-control" name="message" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                            <textarea class="form-control" ng-model="home.contactus.message" name="message" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
                         </div>
                     </div>
                     <br/>
                     <div class="row">
                         <div class="col-md-6 offset-md-3 center">
-                            <button type="button" class="btn btn-outline-success">Enviar Mensaje</button>
+                            <button type="button" class="btn btn-outline-success" ng-click="enviarCorreo(home.contactus)">Enviar Mensaje</button>
                         </div>
                     </div>
                 </form>
