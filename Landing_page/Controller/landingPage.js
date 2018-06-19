@@ -1,4 +1,3 @@
-var nodemailer = require ('nodemailer')
 
 var app = angular.module("cirtec")
   .controller('LandingPageCtrl', function ($scope) {
@@ -6,30 +5,25 @@ var app = angular.module("cirtec")
     home.saludar = 'Hola, mundo';
     console.log('Hola, estoy en el controlador.');
 
-    var transporter = nodemailer.createTransport({
-      service: 'hotmail',
-      auth: {
-        user: 'roboticatecsc@hotmail.com',
-        pass: 'robotica12345'
-      }
-    });
-    
-    var mailOptions = {
-      from: 'roboticatecsc@hotmail.com',
-      to: 'eblanco707@gmail.com',
-      subject: 'Robotica Tec SC',
-      text: 'That was easy!'
-    };
-    
-    home.enviarCorreo = function enviarCorreo(pContactus){
-      console.log(pContactus)
+    home.contactus = {
+      subject: "",
+      email: "",
+      message: ""
+    }
 
-      // transporter.sendMail(mailOptions, function(error, info){
-      //   if (error) {
-      //     console.log(error);
-      //   } else {
-      //     console.log('Email sent: ' + info.response);
-      //   }
-      // });
+    home.enviarCorreo = function enviarCorreo() {
+      console.log(home.contactus)
+
+      var template_params = {
+        "subject": home.contactus.subject,
+        "to_name": "Comunidad Robotica TEC SC",
+        "from_name": home.contactus.email,
+        "message_html": home.contactus.message
+      }
+
+      var service_id = "default_service";
+      var template_id = "template_dv2AHZcF";
+      emailjs.send(service_id, template_id, template_params);
+      alert("Se ha enviado un correo a la Comunidad de Robótica");
     }
   });
