@@ -1,6 +1,7 @@
 var app = angular.module("cirtec")
     .controller('LoginCtrl', function ($scope, requestService) {
         var vm = this;
+        var url = "";
         vm.user = {
             username: "",
             password: ""
@@ -13,10 +14,11 @@ var app = angular.module("cirtec")
 
             //TODO: URL del servidor en laravel...
             requestService.getRequest({
-                data: pUser,
-                params: ''
+                data: '',
+                params: "?username="+pUser.username+"&password="+pUser.password
             }, {
-                url: ""
+                url: "localhost:8000/api/login"
+                
             }).then(function (respuesta) {
                 console.log(respuesta);
             });

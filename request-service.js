@@ -4,6 +4,7 @@ angular.module('cirtec')
 
 		return {
 			getRequest: function (data, configs) {
+				console.log(configs)
 				return $http({
 						method: 'GET',
 						url: configs.url + data.params,
@@ -13,6 +14,7 @@ angular.module('cirtec')
 							return response.data;
 						},
 						function errorCallback(response) {
+							console.log(response)
 							return {
 								success: false,
 								data: null
